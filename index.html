@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AP2 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="brasao.ico">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Botadogo 2024</h2>
+    <h3>Site de visualização dos jogadores do Botadogo</h3>
+    
+    
+
+    <div id="loginForm">
+        
+        <div id="elencos">
+            <img id="time" src="time.jpeg" alt="Elenco masculino">
+            <img id="femenino" src="femeninobotafogo.jpg" alt="Elenco femenino">
+        </div>
+        <label for="senha">Digite a senha:</label>
+        <input type="password" id="senha" name="senha">
+        <button class="button" onclick="verificarSenha()">Entrar</button>
+
+        <div class="Senha-colorida">
+            <p><strong>Senha: LIBERTADORES</strong></p>
+        </div>
+        <p id="erroSenha" style="color: red; display: none;">Senha errada</p>
+        <h4>Projeto da AP2 para a disciplina Desenvolvimento Web do IBMEC Rio. Trabalho feito por Jeronimo Chiclana, 2024.2</h4>
+        <div>
+            <img src="botafogogif.gif" alt="torcida botafogo">
+        </div>
+
+    </div>
+
+    <div id="filtros" style="display:none;">
+        <button class="button" onclick="filtrarJogadores('masculino')">Masculino</button>
+        <button class="button" onclick="filtrarJogadores('feminino')">Feminino</button>
+        <button class="button" onclick="filtrarJogadores('completo')">Elenco Completo</button>
+        
+        <input class="pesquisanome" type="text" id="searchInput" placeholder="Pesquisar por nome..." oninput="pesquisarJogadores()" />
+
+        <div id="listaJogadores" style="margin-top: 20px;">
+
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
+
